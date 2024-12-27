@@ -1,0 +1,7 @@
+a 64 x 20 terminal 
+
+bash, git bash.
+
+java 17. (for the minecraft server)
+
+8GB Ram (minimum) or 16 GB (For high ram version.)
