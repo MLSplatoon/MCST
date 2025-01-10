@@ -1,4 +1,5 @@
 # A Proyect by MA_Dev
+# USE BASH OR GIT BASH, IF YOU USE OTHER, THE SCRIPT CAN´T WORK.
 # To Play with friends and testing
 
 Tutorial:
