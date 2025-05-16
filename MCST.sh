@@ -19,9 +19,7 @@
 # 2. Ejecutar el Script con: ./MCST.sh
 # 3. Presiona 1 y dale a enter. Ya tienes abierto el servidor
 # 4. Para detener el servidor, escribe: stop
-# 5. Hay 4 Scripts: MCST.sh (Español), MCST-EN.sh (Inglés, English),
-# **MCST-H.sh** (Español, Ejecuta servidor local con -Xmx8G -Xms4G -jar)
-# y MCST-H-EN.sh (Inglés, English. Runs the local server with -Xmx8G -Xms4G -jar)
+# 5. Hay 2 Scripts: MCST.sh (Español), MCST-EN.sh (Inglés, English).
 
 #  --------- ENGLISH ------------
 # 1. Open a Bash Terminal or a Git Bash Terminal.
