@@ -124,7 +124,7 @@ descargar_paper() {
     return 0 # Salir de la función sin error
     fi
 
-    echo "Descargando la versión de Paper 1.21.4..."
+    echo "Descargando la versión de Paper 1.21.4-30..."
 
     # Descargar paper-1.21.4-30.jar usando el enlace proporcionado
     curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.21.4/builds/30/downloads/paper-1.21.4-30.jar
