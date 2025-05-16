@@ -12,22 +12,20 @@
 #   ▀█   ███   █▀  ████████▀   ▄████████▀     ▄████▀   
 
 
-# Script creado por MA_Dev (Versión 1.0)
-# Para Todo los que quieran jugar en un servidor local custom
+# Script created by MA_Dev (Version 1.0)
+# For everyone who wants to play on a custom local server
 
-# 1. Abrir una Terminal Bash, O Una terminal Git Bash
-# 2. Ejecutar el Script con: ./MCST.sh
-# 3. Presiona 1 y dale a enter. Ya tienes abierto el servidor
-# 4. Para detener el servidor, escribe: stop
-# 5. Hay 4 Scripts: MCST.sh (Español), MCST-EN.sh (Inglés, English),
-# **MCST-H.sh** (Español, Ejecuta servidor local con -Xmx8G -Xms4G -jar)
-# y MCST-H-EN.sh (Inglés, English. Runs the local server with -Xmx8G -Xms4G -jar)
+#1. Open a Bash Terminal, OR a Git Bash Terminal
+# 2. Run the Script with: ./MCST-EN.sh
+#3. Press 1 and hit enter. You already have the server open
+#4. To stop the server, type: stop
+#5. There are 2 Scripts: MCST.sh (Spanish), MCST-EN.sh (English).
 
-#  --------- ENGLISH ------------
-# 1. Open a Bash Terminal or a Git Bash Terminal.
-# 2. Execute the script with: ./MSCT-EN.sh
-# 3. Press 1 and later press enter. Now you have the server open
-# 4. to close the server, type: stop
+# --------- ENGLISH ------------
+#1. Open a Bash Terminal or a Git Bash Terminal.
+#2. Execute the script with: ./MSCT-EN.sh
+#3. Press 1 and then press enter. Now you have the server open
+#4. to close the server, type: stop
 
 
 
