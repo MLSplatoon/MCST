@@ -21,6 +21,8 @@
 # 4. Para detener el servidor, escribe: stop
 # 5. Hay 2 Scripts: MCST.sh (Español), MCST-EN.sh (Inglés, English).
 
+# edit: Después de mucho tiempo, MCST va a recibir una actualización y una interfaz gráfica fácil y rápida de usar.
+
 #  --------- ENGLISH ------------
 # 1. Open a Bash Terminal or a Git Bash Terminal.
 # 2. Execute the script with: ./MSCT-EN.sh
@@ -89,54 +91,54 @@ ART2="""
 
 
 exit_script_alt() {
-  echo -e "${Verde}Finalizando Script, MCST Setup 2024${NC}"
+  echo -e "${Verde}Finalizando Script, MCST Setup 2025 - MA_Dev | No estoy asociado con Mojang Studios o Microsoft.${NC}"
   exit 0
 }
 
 descargar_minecraft() {
 
     if [[ -f "server.jar" ]]; then
-    echo "Ya existe un servidor instalado (server.jar o paper.jar). No es necesario descargar otro."
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
     return 0 # Salir de la función sin error
     fi
 
-    echo "Descargando server.jar de minecraft.net..."
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
 
     # Descargar server.jar utilizando el enlace que proporcionaste
     curl -L -o server.jar https://piston-data.mojang.com/v1/objects/4707d00eb834b446575d89a61a11b5d548d8c001/server.jar
 
     # Verificar si la descarga fue exitosa
     if [[ $? -ne 0 || ! -f server.jar ]]; then
-        echo "Error al descargar server.jar."
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
         exit 1
     fi
 
     # Aceptar el EULA
     echo "eula=true" > eula.txt
-    echo "EULA aceptado. ¡Listo para iniciar el servidor de Minecraft!"
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
 }
 
 # Función para descargar Paper desde su sitio oficial
 descargar_paper() {
 
     if [[ -f "paper.jar" ]]; then
-    echo "Ya existe un servidor instalado (server.jar o paper.jar). No es necesario descargar otro."
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
     return 0 # Salir de la función sin error
     fi
 
-    echo "Descargando la versión de Paper 1.21.4-30..."
+    echo "Descargando la versión de Paper 1.21.4-30 (api.papermc.io)..."
 
     # Descargar paper-1.21.4-30.jar usando el enlace proporcionado
     curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.21.4/builds/30/downloads/paper-1.21.4-30.jar
 
     # Verificar si la descarga fue exitosa
     if [[ $? -ne 0 || ! -f paper.jar ]]; then
-        echo "Error al descargar paper.jar."
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
         exit 1
     fi
 
-    echo "Paper descargado correctamente como paper.jar."
-    echo "Listo, ejecute MCST de nuevo."
+    echo "Paper descargado satisfactoriamente."
+    echo "Completado, ejecute MCST.sh de nuevo."
     sleep 4
 
     # Determinar la ubicación del script
@@ -198,7 +200,7 @@ menu_paper() {
         ;;
     esac
   else
-    echo "Paper Instalado, volviendo al menú"
+    echo "Paper ya está instalado, volviendo al menú.."
     sleep 3
     clear
     menu
@@ -208,9 +210,9 @@ menu_paper() {
 # Función para el menú alternativo
 menu_alternativo() {
   echo -e "$arte_ascii"
-  echo -e "¡Bienvenido al MCST Setup!"
+  echo -e "¡Bienvenido al Setup de MCST!"
   echo -e "Seleccione una opción:"
-  echo -e "[1]. Descargar Minecraft Server y Paper Server (Recomendado)"
+  echo -e "[1]. Descargar Minecraft Server y Paper (Recomendado)"
   echo -e "[2]. Descargar Minecraft Server, No Paper (No Recomendado)"
   echo -e "[3]. Salir"
   read -p "Ingrese su opción: " opcion
@@ -272,7 +274,7 @@ start_server() {
     java -Xmx4G -Xms2G -jar server.jar nogui
   else
     # Manejar el caso en que ningún archivo .jar está disponible
-    echo -e "${Rojo}Error: No se encontró ningún archivo .jar válido para iniciar el servidor.${NC}"
+    echo -e "${Rojo}Error: No se encontró ningún archivo .jar válido para iniciar el servidor, porfavor intentelo de nuevo, en caso de que no funcione, porfavor mire la guía de instalación.${NC}"
     sleep 2
     menu
     return
@@ -298,7 +300,7 @@ start_server_h() {
     java -Xmx8G -Xms4G -jar server.jar nogui
   else
     # Manejar el caso en que ningún archivo .jar está disponible
-    echo -e "${Rojo}Error: No se encontró ningún archivo .jar válido para iniciar el servidor.${NC}"
+    echo -e "${Rojo}Error: No se encontró ningún archivo .jar válido para iniciar el servidor, porfavor intentelo de nuevo, en caso de que no funcione, porfavor mire la guía de instalación.${NC}"
     sleep 2
     menu
     return
@@ -554,7 +556,7 @@ credits() {
   echo -e "${Azul}Script creado por: MA_Dev"
   echo -e "${Xtra}Programado en Visual Studio Code"
   echo -e "${Azul_Dark}Usando Bash (.sh) y git bash"
-  echo -e "${Xtra}Versión del script: v1.3"
+  echo -e "${Xtra}Versión del script: v1.4."
   echo -e "${Verde}¡Gracias por usar el script!"
   echo -e "${Amarillo}========================================${NC}"
   echo -e "Presiona Enter para volver al menú..."
@@ -564,7 +566,7 @@ credits() {
 
 # Función para salir del script
 exit_script() {
-  echo -e "${Verde}Finalizando Script, Gracias por usar MCST ¡Hasta luego!${NC}"
+  echo -e "${Verde}Finalizando Script, Gracias por usar MCST ¡Hasta otra!${NC}"
   exit 0
 }
 
@@ -572,4 +574,4 @@ exit_script() {
 show_art "$ART1"
 show_art "$ART2"
 menu
-# HECHO POR: MA_DEV, 2024.
+# HECHO POR: MA_DEV, 2025.
