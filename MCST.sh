@@ -556,8 +556,9 @@ credits() {
   echo -e "${Azul}Script creado por: MA_Dev"
   echo -e "${Xtra}Programado en Visual Studio Code"
   echo -e "${Azul_Dark}Usando Bash (.sh) y git bash"
-  echo -e "${Xtra}Versión del script: v1.4."
+  echo -e "${Xtra}Versión del script: v1.4.1"
   echo -e "${Verde}¡Gracias por usar el script!"
+  echo -e "${Rojo}MCST.sh no tendrá soporte a partir de Julio de 2025.
   echo -e "${Amarillo}========================================${NC}"
   echo -e "Presiona Enter para volver al menú..."
   read
@@ -567,6 +568,7 @@ credits() {
 # Función para salir del script
 exit_script() {
   echo -e "${Verde}Finalizando Script, Gracias por usar MCST ¡Hasta otra!${NC}"
+  echo -e "${Rojo}MCST.sh no tendrá soporte a partir de Julio de 2025.
   exit 0
 }
 
@@ -575,3 +577,6 @@ show_art "$ART1"
 show_art "$ART2"
 menu
 # HECHO POR: MA_DEV, 2025.
+# MCST.sh y MCST-EN.sh dejarán de recibir actualizaciones y soporte a partir del 30 de Junio de 2025. Para más información, Porfavor mire nuestro servidor de discord.
+# MCST Is no longer supported, in 30 June of 2025, The .sh version will not receive updates anymore, MCST is being updated in Python. The Source code is going to be updated as soon as posible.
+# ÚLTIMA VERSIÓN: 1.4.1
