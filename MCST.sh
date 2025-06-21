@@ -12,8 +12,8 @@
 #   ▀█   ███   █▀  ████████▀   ▄████████▀     ▄████▀   
 
 
-# Script creado por MA_Dev (Versión 1.0)
-# Para Todo los que quieran jugar en un servidor local custom
+# Script creado por MA_Dev (Versión 1.7)
+# Para Todos los que quieran jugar en un servidor local, Más facil y rapido.
 
 # 1. Abrir una Terminal Bash, O Una terminal Git Bash
 # 2. Ejecutar el Script con: ./MCST.sh
@@ -21,7 +21,7 @@
 # 4. Para detener el servidor, escribe: stop
 # 5. Hay 2 Scripts: MCST.sh (Español), MCST-EN.sh (Inglés, English).
 
-# edit: Después de mucho tiempo, MCST va a recibir una actualización y una interfaz gráfica fácil y rápida de usar.
+# edit: Después de mucho tiempo, MCST va a recibir una actualización.
 
 #  --------- ENGLISH ------------
 # 1. Open a Bash Terminal or a Git Bash Terminal.
@@ -88,12 +88,1113 @@ ART2="""
        ░         ░  ░      ░       ░  ░     ░  
                          ░                 ░   
 """
-
+  #* A que está guapo el ASCII? :D
 
 exit_script_alt() {
   echo -e "${Verde}Finalizando Script, MCST Setup 2025 - MA_Dev | No estoy asociado con Mojang Studios o Microsoft.${NC}"
   exit 0
 }
+
+#! INICIO MINECRAFT SERVER VERSIONES
+
+descargar_minecraft_server_1215() {
+
+    if [[ -f "server.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
+
+    # Descargar server.jar utilizando el enlace que proporcionaste
+    curl -L -o server.jar https://piston-data.mojang.com/v1/objects/e6ec2f64e6080b9b5d9b471b291c33cc7f509733/server.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f server.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    # Aceptar el EULA
+    echo "eula=true" > eula.txt
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
+}
+
+descargar_minecraft_server_1214() {
+
+    if [[ -f "server.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
+
+    # Descargar server.jar utilizando el enlace que proporcionaste
+    curl -L -o server.jar https://piston-data.mojang.com/v1/objects/4707d00eb834b446575d89a61a11b5d548d8c001/server.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f server.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    # Aceptar el EULA
+    echo "eula=true" > eula.txt
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
+}
+
+descargar_minecraft_server_1213() {
+
+    if [[ -f "server.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
+
+    # Descargar server.jar utilizando el enlace que proporcionaste
+    curl -L -o server.jar https://piston-data.mojang.com/v1/objects/45810d238246d90e811d896f87b14695b7fb6839/server.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f server.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    # Aceptar el EULA
+    echo "eula=true" > eula.txt
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
+}
+
+descargar_minecraft_server_1211() {
+
+    if [[ -f "server.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
+
+    # Descargar server.jar utilizando el enlace que proporcionaste
+    curl -L -o server.jar https://piston-data.mojang.com/v1/objects/59353fb40c36d304f2035d51e7d6e6baa98dc05c/server.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f server.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    # Aceptar el EULA
+    echo "eula=true" > eula.txt
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
+}
+
+descargar_minecraft_server_121() {
+
+    if [[ -f "server.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
+
+    # Descargar server.jar utilizando el enlace que proporcionaste
+    curl -L -o server.jar https://piston-data.mojang.com/v1/objects/450698d1863ab5180c25d7c804ef0fe6369dd1ba/server.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f server.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    # Aceptar el EULA
+    echo "eula=true" > eula.txt
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
+}
+
+descargar_minecraft_server_1206() {
+
+    if [[ -f "server.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
+
+    # Descargar server.jar utilizando el enlace que proporcionaste
+    curl -L -o server.jar https://piston-data.mojang.com/v1/objects/145ff0858209bcfc164859ba735d4199aafa1eea/server.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f server.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    # Aceptar el EULA
+    echo "eula=true" > eula.txt
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
+}
+
+descargar_minecraft_server_1204() {
+
+    if [[ -f "server.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
+
+    # Descargar server.jar utilizando el enlace que proporcionaste
+    curl -L -o server.jar https://piston-data.mojang.com/v1/objects/8dd1a28015f51b1803213892b50b7b4fc76e594d/server.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f server.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    # Aceptar el EULA
+    echo "eula=true" > eula.txt
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
+}
+
+descargar_minecraft_server_120() {
+
+    if [[ -f "server.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
+
+    # Descargar server.jar utilizando el enlace que proporcionaste
+    curl -L -o server.jar https://piston-data.mojang.com/v1/objects/15c777e2cfe0556eef19aab534b186c0c6f277e1/server.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f server.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    # Aceptar el EULA
+    echo "eula=true" > eula.txt
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
+}
+
+descargar_minecraft_server_119() {
+
+    if [[ -f "server.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
+
+    # Descargar server.jar utilizando el enlace que proporcionaste
+    curl -L -o server.jar https://piston-data.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f server.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    # Aceptar el EULA
+    echo "eula=true" > eula.txt
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
+}
+
+descargar_minecraft_server_1182() {
+
+    if [[ -f "server.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
+
+    # Descargar server.jar utilizando el enlace que proporcionaste
+    curl -L -o server.jar https://piston-data.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f server.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    # Aceptar el EULA
+    echo "eula=true" > eula.txt
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
+}
+
+descargar_minecraft_server_1161() {
+
+    if [[ -f "server.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
+
+    # Descargar server.jar utilizando el enlace que proporcionaste
+    curl -L -o server.jar https://piston-data.mojang.com/v1/objects/a412fd69db1f81db3f511c1463fd304675244077/server.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f server.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    # Aceptar el EULA
+    echo "eula=true" > eula.txt
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
+}
+
+descargar_minecraft_server_1165() {
+
+    if [[ -f "server.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando el archivo server.jar de minecraft.net (piston-data.mojang.com)..."
+
+    # Descargar server.jar utilizando el enlace que proporcionaste
+    curl -L -o server.jar https://piston-data.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f server.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo server.jar desde minecraft.net, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    # Aceptar el EULA
+    echo "eula=true" > eula.txt
+    echo "Al correr un servidor de Minecraft, Aceptas el EULA (aceptado automáticamente). ¡Listo para iniciar el servidor de Minecraft!"
+}
+#! FIN MINECRAFT SERVER VERSIONES
+
+
+#! PAPER VERSIONES INICIO 
+descargar_minecraft_serverP_1215() {
+    descargar_minecraft_serverP_SUB1215
+}
+
+descargar_minecraft_serverP_1214() {
+    descargar_minecraft_serverP_SUB1214
+}
+
+descargar_minecraft_serverP_1213() {
+    descargar_minecraft_serverP_SUB1213
+}
+
+descargar_minecraft_serverP_1211() {
+    descargar_minecraft_serverP_SUB1211
+}
+
+descargar_minecraft_serverP_121() {
+    descargar_minecraft_serverP_SUB121
+}
+
+descargar_minecraft_serverP_1204() {
+    descargar_minecraft_serverP_SUB1204
+}
+
+descargar_minecraft_serverP_1206() {
+    descargar_minecraft_serverP_SUB1206
+}
+
+descargar_minecraft_serverP_120() {
+    descargar_minecraft_serverP_SUB120
+}
+
+descargar_minecraft_serverP_119() {
+    descargar_minecraft_serverP_SUB119
+}
+
+descargar_minecraft_serverP_1182() {
+    descargar_minecraft_serverP_SUB1182
+}
+
+descargar_minecraft_serverP_1165() {
+    descargar_minecraft_serverP_SUB1165
+}
+
+descargar_minecraft_serverP_1161() {
+    descargar_minecraft_serverP_SUB1161
+}
+
+descargar_minecraft_serverP_SUB1215(){
+
+    if [[ -f "paper.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    sleep 4
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando la versión de Paper (api.papermc.io)..."
+
+    curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.21.5/builds/114/downloads/paper-1.21.5-114.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f paper.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    echo "Completado, ejecute MCST.sh de nuevo."
+    sleep 4
+
+    # Determinar la ubicación del script
+    script_dir=$(dirname "$(readlink -f "$0")")
+
+    # Crear el archivo en el mismo directorio del script para instalar plugins
+  cat <<EOF > instalar-plugins-pasos.txt
+  ------ TUTORIAL COMO INSTALAR PLUGINS -------
+  1. Para Instalar un plugin, tienes que asegurarte que esté para la versión
+  Del Servidor y que esté para Paper. Descargalo de Spigot o de una fuente
+  verificada.
+  2. Descargas el plugin y mueves el archivo ".jar" que acabas de
+  descargar a la carpeta "plugins"
+  3. Cuando esté en la carpeta correcta ("Plugins"). Ejecutas MCST y 
+  Enciendes el servidor
+  (Recuerda que tienes que iniciar el servidor y detenerlo para
+  tener la carpeta "plugins" si no lo has iniciado por primera vez)
+  -------------------------
+  YA TIENES UN PLUGIN INSTALADO EN TU SERVIDOR DE MINECRAFT.
+EOF
+  cat <<EOF > install-plugins-tutorial.txt
+  ------ HOW TO INSTALL PLUGINS TUTORIAL -------
+  1. To install a plugin, you need to know first that is on the
+  version of the server and its for paper. Download it from spigot or
+  for a verified webpage.
+  2. Download the plugin and move the ".jar" file that you downloaded
+  to the folder "plugins" in the server.
+  3. When the .jar file is on the "plugins" folder, you can start the
+  script MCST-EN.
+  (Remember that you have you start the server and stop it. to get the
+  plugins folder. Start the server for the first time. to get the folders)
+  -------------------------
+  NOW YOU HAVE A PLUGIN INSTALLED ON YOUR MINECRAFT SERVER.
+EOF
+}
+
+descargar_minecraft_serverP_SUB1214(){
+
+    if [[ -f "paper.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    sleep 4
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando la versión de Paper (api.papermc.io)..."
+
+    curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.21.4/builds/232/downloads/paper-1.21.4-232.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f paper.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    echo "Completado, ejecute MCST.sh de nuevo."
+    sleep 4
+
+    # Determinar la ubicación del script
+    script_dir=$(dirname "$(readlink -f "$0")")
+
+    # Crear el archivo en el mismo directorio del script para instalar plugins
+  cat <<EOF > instalar-plugins-pasos.txt
+  ------ TUTORIAL COMO INSTALAR PLUGINS -------
+  1. Para Instalar un plugin, tienes que asegurarte que esté para la versión
+  Del Servidor y que esté para Paper. Descargalo de Spigot o de una fuente
+  verificada.
+  2. Descargas el plugin y mueves el archivo ".jar" que acabas de
+  descargar a la carpeta "plugins"
+  3. Cuando esté en la carpeta correcta ("Plugins"). Ejecutas MCST y 
+  Enciendes el servidor
+  (Recuerda que tienes que iniciar el servidor y detenerlo para
+  tener la carpeta "plugins" si no lo has iniciado por primera vez)
+  -------------------------
+  YA TIENES UN PLUGIN INSTALADO EN TU SERVIDOR DE MINECRAFT.
+EOF
+  cat <<EOF > install-plugins-tutorial.txt
+  ------ HOW TO INSTALL PLUGINS TUTORIAL -------
+  1. To install a plugin, you need to know first that is on the
+  version of the server and its for paper. Download it from spigot or
+  for a verified webpage.
+  2. Download the plugin and move the ".jar" file that you downloaded
+  to the folder "plugins" in the server.
+  3. When the .jar file is on the "plugins" folder, you can start the
+  script MCST-EN.
+  (Remember that you have you start the server and stop it. to get the
+  plugins folder. Start the server for the first time. to get the folders)
+  -------------------------
+  NOW YOU HAVE A PLUGIN INSTALLED ON YOUR MINECRAFT SERVER.
+EOF
+}
+
+descargar_minecraft_serverP_SUB1213(){
+
+    if [[ -f "paper.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    sleep 4
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando la versión de Paper (api.papermc.io)..."
+
+    curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.21.3/builds/83/downloads/paper-1.21.3-83.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f paper.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    echo "Completado, ejecute MCST.sh de nuevo."
+    sleep 4
+
+    # Determinar la ubicación del script
+    script_dir=$(dirname "$(readlink -f "$0")")
+
+    # Crear el archivo en el mismo directorio del script para instalar plugins
+  cat <<EOF > instalar-plugins-pasos.txt
+  ------ TUTORIAL COMO INSTALAR PLUGINS -------
+  1. Para Instalar un plugin, tienes que asegurarte que esté para la versión
+  Del Servidor y que esté para Paper. Descargalo de Spigot o de una fuente
+  verificada.
+  2. Descargas el plugin y mueves el archivo ".jar" que acabas de
+  descargar a la carpeta "plugins"
+  3. Cuando esté en la carpeta correcta ("Plugins"). Ejecutas MCST y 
+  Enciendes el servidor
+  (Recuerda que tienes que iniciar el servidor y detenerlo para
+  tener la carpeta "plugins" si no lo has iniciado por primera vez)
+  -------------------------
+  YA TIENES UN PLUGIN INSTALADO EN TU SERVIDOR DE MINECRAFT.
+EOF
+  cat <<EOF > install-plugins-tutorial.txt
+  ------ HOW TO INSTALL PLUGINS TUTORIAL -------
+  1. To install a plugin, you need to know first that is on the
+  version of the server and its for paper. Download it from spigot or
+  for a verified webpage.
+  2. Download the plugin and move the ".jar" file that you downloaded
+  to the folder "plugins" in the server.
+  3. When the .jar file is on the "plugins" folder, you can start the
+  script MCST-EN.
+  (Remember that you have you start the server and stop it. to get the
+  plugins folder. Start the server for the first time. to get the folders)
+  -------------------------
+  NOW YOU HAVE A PLUGIN INSTALLED ON YOUR MINECRAFT SERVER.
+EOF
+}
+
+descargar_minecraft_serverP_SUB1211(){
+
+    if [[ -f "paper.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    sleep 4
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando la versión de Paper (api.papermc.io)..."
+
+    curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.21.1/builds/133/downloads/paper-1.21.1-133.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f paper.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    echo "Completado, ejecute MCST.sh de nuevo."
+    sleep 4
+
+    # Determinar la ubicación del script
+    script_dir=$(dirname "$(readlink -f "$0")")
+
+    # Crear el archivo en el mismo directorio del script para instalar plugins
+  cat <<EOF > instalar-plugins-pasos.txt
+  ------ TUTORIAL COMO INSTALAR PLUGINS -------
+  1. Para Instalar un plugin, tienes que asegurarte que esté para la versión
+  Del Servidor y que esté para Paper. Descargalo de Spigot o de una fuente
+  verificada.
+  2. Descargas el plugin y mueves el archivo ".jar" que acabas de
+  descargar a la carpeta "plugins"
+  3. Cuando esté en la carpeta correcta ("Plugins"). Ejecutas MCST y 
+  Enciendes el servidor
+  (Recuerda que tienes que iniciar el servidor y detenerlo para
+  tener la carpeta "plugins" si no lo has iniciado por primera vez)
+  -------------------------
+  YA TIENES UN PLUGIN INSTALADO EN TU SERVIDOR DE MINECRAFT.
+EOF
+  cat <<EOF > install-plugins-tutorial.txt
+  ------ HOW TO INSTALL PLUGINS TUTORIAL -------
+  1. To install a plugin, you need to know first that is on the
+  version of the server and its for paper. Download it from spigot or
+  for a verified webpage.
+  2. Download the plugin and move the ".jar" file that you downloaded
+  to the folder "plugins" in the server.
+  3. When the .jar file is on the "plugins" folder, you can start the
+  script MCST-EN.
+  (Remember that you have you start the server and stop it. to get the
+  plugins folder. Start the server for the first time. to get the folders)
+  -------------------------
+  NOW YOU HAVE A PLUGIN INSTALLED ON YOUR MINECRAFT SERVER.
+EOF
+}
+
+descargar_minecraft_serverP_SUB121(){
+
+    if [[ -f "paper.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    sleep 4
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando la versión de Paper (api.papermc.io)..."
+
+    curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.21/builds/130/downloads/paper-1.21-130.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f paper.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    echo "Completado, ejecute MCST.sh de nuevo."
+    sleep 4
+
+    # Determinar la ubicación del script
+    script_dir=$(dirname "$(readlink -f "$0")")
+
+    # Crear el archivo en el mismo directorio del script para instalar plugins
+  cat <<EOF > instalar-plugins-pasos.txt
+  ------ TUTORIAL COMO INSTALAR PLUGINS -------
+  1. Para Instalar un plugin, tienes que asegurarte que esté para la versión
+  Del Servidor y que esté para Paper. Descargalo de Spigot o de una fuente
+  verificada.
+  2. Descargas el plugin y mueves el archivo ".jar" que acabas de
+  descargar a la carpeta "plugins"
+  3. Cuando esté en la carpeta correcta ("Plugins"). Ejecutas MCST y 
+  Enciendes el servidor
+  (Recuerda que tienes que iniciar el servidor y detenerlo para
+  tener la carpeta "plugins" si no lo has iniciado por primera vez)
+  -------------------------
+  YA TIENES UN PLUGIN INSTALADO EN TU SERVIDOR DE MINECRAFT.
+EOF
+  cat <<EOF > install-plugins-tutorial.txt
+  ------ HOW TO INSTALL PLUGINS TUTORIAL -------
+  1. To install a plugin, you need to know first that is on the
+  version of the server and its for paper. Download it from spigot or
+  for a verified webpage.
+  2. Download the plugin and move the ".jar" file that you downloaded
+  to the folder "plugins" in the server.
+  3. When the .jar file is on the "plugins" folder, you can start the
+  script MCST-EN.
+  (Remember that you have you start the server and stop it. to get the
+  plugins folder. Start the server for the first time. to get the folders)
+  -------------------------
+  NOW YOU HAVE A PLUGIN INSTALLED ON YOUR MINECRAFT SERVER.
+EOF
+}
+
+descargar_minecraft_serverP_SUB1204(){
+
+    if [[ -f "paper.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    sleep 4
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando la versión de Paper (api.papermc.io)..."
+
+    curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.20.4/builds/499/downloads/paper-1.20.4-499.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f paper.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    echo "Completado, ejecute MCST.sh de nuevo."
+    sleep 4
+
+    # Determinar la ubicación del script
+    script_dir=$(dirname "$(readlink -f "$0")")
+
+    # Crear el archivo en el mismo directorio del script para instalar plugins
+  cat <<EOF > instalar-plugins-pasos.txt
+  ------ TUTORIAL COMO INSTALAR PLUGINS -------
+  1. Para Instalar un plugin, tienes que asegurarte que esté para la versión
+  Del Servidor y que esté para Paper. Descargalo de Spigot o de una fuente
+  verificada.
+  2. Descargas el plugin y mueves el archivo ".jar" que acabas de
+  descargar a la carpeta "plugins"
+  3. Cuando esté en la carpeta correcta ("Plugins"). Ejecutas MCST y 
+  Enciendes el servidor
+  (Recuerda que tienes que iniciar el servidor y detenerlo para
+  tener la carpeta "plugins" si no lo has iniciado por primera vez)
+  -------------------------
+  YA TIENES UN PLUGIN INSTALADO EN TU SERVIDOR DE MINECRAFT.
+EOF
+  cat <<EOF > install-plugins-tutorial.txt
+  ------ HOW TO INSTALL PLUGINS TUTORIAL -------
+  1. To install a plugin, you need to know first that is on the
+  version of the server and its for paper. Download it from spigot or
+  for a verified webpage.
+  2. Download the plugin and move the ".jar" file that you downloaded
+  to the folder "plugins" in the server.
+  3. When the .jar file is on the "plugins" folder, you can start the
+  script MCST-EN.
+  (Remember that you have you start the server and stop it. to get the
+  plugins folder. Start the server for the first time. to get the folders)
+  -------------------------
+  NOW YOU HAVE A PLUGIN INSTALLED ON YOUR MINECRAFT SERVER.
+EOF
+}
+
+descargar_minecraft_serverP_SUB1206(){
+
+    if [[ -f "paper.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    sleep 4
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando la versión de Paper (api.papermc.io)..."
+
+    curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.20.6/builds/151/downloads/paper-1.20.6-151.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f paper.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    echo "Completado, ejecute MCST.sh de nuevo."
+    sleep 4
+
+    # Determinar la ubicación del script
+    script_dir=$(dirname "$(readlink -f "$0")")
+
+    # Crear el archivo en el mismo directorio del script para instalar plugins
+  cat <<EOF > instalar-plugins-pasos.txt
+  ------ TUTORIAL COMO INSTALAR PLUGINS -------
+  1. Para Instalar un plugin, tienes que asegurarte que esté para la versión
+  Del Servidor y que esté para Paper. Descargalo de Spigot o de una fuente
+  verificada.
+  2. Descargas el plugin y mueves el archivo ".jar" que acabas de
+  descargar a la carpeta "plugins"
+  3. Cuando esté en la carpeta correcta ("Plugins"). Ejecutas MCST y 
+  Enciendes el servidor
+  (Recuerda que tienes que iniciar el servidor y detenerlo para
+  tener la carpeta "plugins" si no lo has iniciado por primera vez)
+  -------------------------
+  YA TIENES UN PLUGIN INSTALADO EN TU SERVIDOR DE MINECRAFT.
+EOF
+  cat <<EOF > install-plugins-tutorial.txt
+  ------ HOW TO INSTALL PLUGINS TUTORIAL -------
+  1. To install a plugin, you need to know first that is on the
+  version of the server and its for paper. Download it from spigot or
+  for a verified webpage.
+  2. Download the plugin and move the ".jar" file that you downloaded
+  to the folder "plugins" in the server.
+  3. When the .jar file is on the "plugins" folder, you can start the
+  script MCST-EN.
+  (Remember that you have you start the server and stop it. to get the
+  plugins folder. Start the server for the first time. to get the folders)
+  -------------------------
+  NOW YOU HAVE A PLUGIN INSTALLED ON YOUR MINECRAFT SERVER.
+EOF
+}
+
+descargar_minecraft_serverP_SUB120(){
+
+    if [[ -f "paper.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    sleep 4
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando la versión de Paper (api.papermc.io)..."
+
+    curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.20/builds/17/downloads/paper-1.20-17.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f paper.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    echo "Completado, ejecute MCST.sh de nuevo."
+    sleep 4
+
+    # Determinar la ubicación del script
+    script_dir=$(dirname "$(readlink -f "$0")")
+
+    # Crear el archivo en el mismo directorio del script para instalar plugins
+  cat <<EOF > instalar-plugins-pasos.txt
+  ------ TUTORIAL COMO INSTALAR PLUGINS -------
+  1. Para Instalar un plugin, tienes que asegurarte que esté para la versión
+  Del Servidor y que esté para Paper. Descargalo de Spigot o de una fuente
+  verificada.
+  2. Descargas el plugin y mueves el archivo ".jar" que acabas de
+  descargar a la carpeta "plugins"
+  3. Cuando esté en la carpeta correcta ("Plugins"). Ejecutas MCST y 
+  Enciendes el servidor
+  (Recuerda que tienes que iniciar el servidor y detenerlo para
+  tener la carpeta "plugins" si no lo has iniciado por primera vez)
+  -------------------------
+  YA TIENES UN PLUGIN INSTALADO EN TU SERVIDOR DE MINECRAFT.
+EOF
+  cat <<EOF > install-plugins-tutorial.txt
+  ------ HOW TO INSTALL PLUGINS TUTORIAL -------
+  1. To install a plugin, you need to know first that is on the
+  version of the server and its for paper. Download it from spigot or
+  for a verified webpage.
+  2. Download the plugin and move the ".jar" file that you downloaded
+  to the folder "plugins" in the server.
+  3. When the .jar file is on the "plugins" folder, you can start the
+  script MCST-EN.
+  (Remember that you have you start the server and stop it. to get the
+  plugins folder. Start the server for the first time. to get the folders)
+  -------------------------
+  NOW YOU HAVE A PLUGIN INSTALLED ON YOUR MINECRAFT SERVER.
+EOF
+}
+
+descargar_minecraft_serverP_SUB119(){
+
+    if [[ -f "paper.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    sleep 4
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando la versión de Paper (api.papermc.io)..."
+
+    curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.19/builds/81/downloads/paper-1.19-81.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f paper.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    echo "Completado, ejecute MCST.sh de nuevo."
+    sleep 4
+
+    # Determinar la ubicación del script
+    script_dir=$(dirname "$(readlink -f "$0")")
+
+    # Crear el archivo en el mismo directorio del script para instalar plugins
+  cat <<EOF > instalar-plugins-pasos.txt
+  ------ TUTORIAL COMO INSTALAR PLUGINS -------
+  1. Para Instalar un plugin, tienes que asegurarte que esté para la versión
+  Del Servidor y que esté para Paper. Descargalo de Spigot o de una fuente
+  verificada.
+  2. Descargas el plugin y mueves el archivo ".jar" que acabas de
+  descargar a la carpeta "plugins"
+  3. Cuando esté en la carpeta correcta ("Plugins"). Ejecutas MCST y 
+  Enciendes el servidor
+  (Recuerda que tienes que iniciar el servidor y detenerlo para
+  tener la carpeta "plugins" si no lo has iniciado por primera vez)
+  -------------------------
+  YA TIENES UN PLUGIN INSTALADO EN TU SERVIDOR DE MINECRAFT.
+EOF
+  cat <<EOF > install-plugins-tutorial.txt
+  ------ HOW TO INSTALL PLUGINS TUTORIAL -------
+  1. To install a plugin, you need to know first that is on the
+  version of the server and its for paper. Download it from spigot or
+  for a verified webpage.
+  2. Download the plugin and move the ".jar" file that you downloaded
+  to the folder "plugins" in the server.
+  3. When the .jar file is on the "plugins" folder, you can start the
+  script MCST-EN.
+  (Remember that you have you start the server and stop it. to get the
+  plugins folder. Start the server for the first time. to get the folders)
+  -------------------------
+  NOW YOU HAVE A PLUGIN INSTALLED ON YOUR MINECRAFT SERVER.
+EOF
+}
+
+descargar_minecraft_serverP_SUB1182(){
+
+    if [[ -f "paper.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    sleep 4
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando la versión de Paper (api.papermc.io)..."
+
+    curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.18.2/builds/388/downloads/paper-1.18.2-388.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f paper.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    echo "Completado, ejecute MCST.sh de nuevo."
+    sleep 4
+
+    # Determinar la ubicación del script
+    script_dir=$(dirname "$(readlink -f "$0")")
+
+    # Crear el archivo en el mismo directorio del script para instalar plugins
+  cat <<EOF > instalar-plugins-pasos.txt
+  ------ TUTORIAL COMO INSTALAR PLUGINS -------
+  1. Para Instalar un plugin, tienes que asegurarte que esté para la versión
+  Del Servidor y que esté para Paper. Descargalo de Spigot o de una fuente
+  verificada.
+  2. Descargas el plugin y mueves el archivo ".jar" que acabas de
+  descargar a la carpeta "plugins"
+  3. Cuando esté en la carpeta correcta ("Plugins"). Ejecutas MCST y 
+  Enciendes el servidor
+  (Recuerda que tienes que iniciar el servidor y detenerlo para
+  tener la carpeta "plugins" si no lo has iniciado por primera vez)
+  -------------------------
+  YA TIENES UN PLUGIN INSTALADO EN TU SERVIDOR DE MINECRAFT.
+EOF
+  cat <<EOF > install-plugins-tutorial.txt
+  ------ HOW TO INSTALL PLUGINS TUTORIAL -------
+  1. To install a plugin, you need to know first that is on the
+  version of the server and its for paper. Download it from spigot or
+  for a verified webpage.
+  2. Download the plugin and move the ".jar" file that you downloaded
+  to the folder "plugins" in the server.
+  3. When the .jar file is on the "plugins" folder, you can start the
+  script MCST-EN.
+  (Remember that you have you start the server and stop it. to get the
+  plugins folder. Start the server for the first time. to get the folders)
+  -------------------------
+  NOW YOU HAVE A PLUGIN INSTALLED ON YOUR MINECRAFT SERVER.
+EOF
+}
+
+descargar_minecraft_serverP_SUB1161(){
+
+    if [[ -f "paper.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    sleep 4
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando la versión de Paper (api.papermc.io)..."
+
+    curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.16.1/builds/138/downloads/paper-1.16.1-138.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f paper.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    echo "Completado, ejecute MCST.sh de nuevo."
+    sleep 4
+
+    # Determinar la ubicación del script
+    script_dir=$(dirname "$(readlink -f "$0")")
+
+    # Crear el archivo en el mismo directorio del script para instalar plugins
+  cat <<EOF > instalar-plugins-pasos.txt
+  ------ TUTORIAL COMO INSTALAR PLUGINS -------
+  1. Para Instalar un plugin, tienes que asegurarte que esté para la versión
+  Del Servidor y que esté para Paper. Descargalo de Spigot o de una fuente
+  verificada.
+  2. Descargas el plugin y mueves el archivo ".jar" que acabas de
+  descargar a la carpeta "plugins"
+  3. Cuando esté en la carpeta correcta ("Plugins"). Ejecutas MCST y 
+  Enciendes el servidor
+  (Recuerda que tienes que iniciar el servidor y detenerlo para
+  tener la carpeta "plugins" si no lo has iniciado por primera vez)
+  -------------------------
+  YA TIENES UN PLUGIN INSTALADO EN TU SERVIDOR DE MINECRAFT.
+EOF
+  cat <<EOF > install-plugins-tutorial.txt
+  ------ HOW TO INSTALL PLUGINS TUTORIAL -------
+  1. To install a plugin, you need to know first that is on the
+  version of the server and its for paper. Download it from spigot or
+  for a verified webpage.
+  2. Download the plugin and move the ".jar" file that you downloaded
+  to the folder "plugins" in the server.
+  3. When the .jar file is on the "plugins" folder, you can start the
+  script MCST-EN.
+  (Remember that you have you start the server and stop it. to get the
+  plugins folder. Start the server for the first time. to get the folders)
+  -------------------------
+  NOW YOU HAVE A PLUGIN INSTALLED ON YOUR MINECRAFT SERVER.
+EOF
+}
+
+descargar_minecraft_serverP_SUB1165(){
+
+    if [[ -f "paper.jar" ]]; then
+    echo "Parece que ya existe un servidor instalado (server.jar or paper.jar) y no es necesario descargar otro."
+    sleep 4
+    return 0 # Salir de la función sin error
+    fi
+
+    echo "Descargando la versión de Paper (api.papermc.io)..."
+
+    curl -L -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
+
+    # Verificar si la descarga fue exitosa
+    if [[ $? -ne 0 || ! -f paper.jar ]]; then
+        echo "Ha ocurrido un error al descargar el archivo paper.jar desde api.papermc.io, pruebe más tarde, en caso de que no funcione, porfavor contactenos"
+        exit 1
+    fi
+
+    echo "Completado, ejecute MCST.sh de nuevo."
+    sleep 4
+
+    # Determinar la ubicación del script
+    script_dir=$(dirname "$(readlink -f "$0")")
+
+    # Crear el archivo en el mismo directorio del script para instalar plugins
+  cat <<EOF > instalar-plugins-pasos.txt
+  ------ TUTORIAL COMO INSTALAR PLUGINS -------
+  1. Para Instalar un plugin, tienes que asegurarte que esté para la versión
+  Del Servidor y que esté para Paper. Descargalo de Spigot o de una fuente
+  verificada.
+  2. Descargas el plugin y mueves el archivo ".jar" que acabas de
+  descargar a la carpeta "plugins"
+  3. Cuando esté en la carpeta correcta ("Plugins"). Ejecutas MCST y 
+  Enciendes el servidor
+  (Recuerda que tienes que iniciar el servidor y detenerlo para
+  tener la carpeta "plugins" si no lo has iniciado por primera vez)
+  -------------------------
+  YA TIENES UN PLUGIN INSTALADO EN TU SERVIDOR DE MINECRAFT.
+EOF
+  cat <<EOF > install-plugins-tutorial.txt
+  ------ HOW TO INSTALL PLUGINS TUTORIAL -------
+  1. To install a plugin, you need to know first that is on the
+  version of the server and its for paper. Download it from spigot or
+  for a verified webpage.
+  2. Download the plugin and move the ".jar" file that you downloaded
+  to the folder "plugins" in the server.
+  3. When the .jar file is on the "plugins" folder, you can start the
+  script MCST-EN.
+  (Remember that you have you start the server and stop it. to get the
+  plugins folder. Start the server for the first time. to get the folders)
+  -------------------------
+  NOW YOU HAVE A PLUGIN INSTALLED ON YOUR MINECRAFT SERVER.
+EOF
+}
+#! PAPER VERSIONES FINAL
+
+  #*Podría haberlo hecho en una sola función, pero me gusta más así.
+
+
+# Menú de versiones de Minecraft
+descargar_minecraft_menu() {
+    clear
+    echo "╔══════════════════════════════╗"
+    echo "║  VERSIONES MINECRAFT SERVER  ║"
+    echo "╚══════════════════════════════╝"
+    echo "1) 1.21.5"
+    echo "2) 1.21.4"
+    echo "3) 1.21.3"
+    echo "4) 1.21.1"
+    echo "5) 1.21"
+    echo "6) 1.20.4"
+    echo "7) 1.20.6"
+    echo "8) 1.20"
+    echo "9) 1.19"
+    echo "10) 1.18.2"
+    echo "11) 1.16.5"
+    echo "12) 1.16.1"
+    echo "13) Salir"
+    echo ""
+    read -p "Seleccione versión (1-13): " opcion_version
+
+    case $opcion_version in
+
+        1) descargar_minecraft_server_1215 ;;
+
+        2) descargar_minecraft_server_1214 ;;
+
+        3) descargar_minecraft_server_1213 ;;
+
+        4) descargar_minecraft_server_1211 ;;
+
+        5) descargar_minecraft_server_121 ;;
+        
+        6) descargar_minecraft_server_1204 ;;
+
+        7) descargar_minecraft_server_1206 ;;
+        
+        8) descargar_minecraft_server_120 ;;
+
+        9) descargar_minecraft_server_119 ;;
+
+        10) descargar_minecraft_server_1182 ;;
+
+        11) descargar_minecraft_server_1165 ;;
+
+        12) descargar_minecraft_server_1161 ;;
+
+        13) exit_script_alt ;;
+
+        *) echo "Opción inválida"; sleep 1; descargar_minecraft_menu ;;
+    esac
+}
+  #? Añadir más versiones de Minecrraft Server y Paper?
+descargar_paper_menu() {
+    clear
+    echo "╔══════════════════════════════╗"
+    echo "║  VERSIONES PAPERMC MINECRAFT ║"
+    echo "╚══════════════════════════════╝"
+    echo "1) 1.21.5"
+    echo "2) 1.21.4"
+    echo "3) 1.21.3"
+    echo "4) 1.21.1"
+    echo "5) 1.21"
+    echo "6) 1.20.6"
+    echo "7) 1.20.4"
+    echo "8) 1.20"
+    echo "9) 1.19"
+    echo "10) 1.18.2"
+    echo "11) 1.16.5"
+    echo "12) 1.16.1"
+    echo "13) Salir"
+    echo ""
+    read -p "Seleccione versión (1-13): " opcion_version
+
+    case $opcion_version in
+
+        1) descargar_minecraft_serverP_1215 ;;
+
+        2) descargar_minecraft_serverP_1214 ;;
+
+        3) descargar_minecraft_serverP_1213 ;;
+
+        4) descargar_minecraft_serverP_1211 ;;
+
+        5) descargar_minecraft_serverP_121;;
+        
+        6) descargar_minecraft_serverP_1206 ;;
+
+        7) descargar_minecraft_serverP_1204 ;;
+        
+        8) descargar_minecraft_serverP_120 ;;
+
+        9) descargar_minecraft_serverP_119 ;;
+
+        10) descargar_minecraft_serverP_1182 ;;
+
+        11) descargar_minecraft_serverP_1165 ;;
+
+        12) descargar_minecraft_serverP_1161 ;;
+
+        13) exit_script_alt ;;
+
+        *) echo "Opción inválida"; sleep 1; descargar_paper_menu;;
+    esac
+}
+
 
 descargar_minecraft() {
 
@@ -188,7 +1289,7 @@ menu_paper() {
 
     case $opcion in
       2)
-        descargar_paper
+        descargar_paper_menu
         ;;
       3)
         menu
@@ -219,10 +1320,10 @@ menu_alternativo() {
 
   if [[ $opcion -eq 1 ]]; then
       # Descargar Minecraft Server y Paper Server
-      descargar_minecraft
-      descargar_paper
+      descargar_minecraft_menu
+      descargar_paper_menu
   elif [[ $opcion -eq 2 ]]; then
-      descargar_minecraft
+      descargar_minecraft_menu
     elif [[ $opcion -eq 3 ]]; then
       exit_script_alt
   else
@@ -369,7 +1470,7 @@ server_info(){
   echo -e "${Amarillo}========================================"
   echo -e "${Verde}       INFORMACIÓN DEL SERVIDOR         "
   echo -e "${Amarillo}========================================"
-  echo -e "${Azul_Dark}- Versión: 1.21.4"
+  echo -e "${Azul_Dark}- Versión: Próximamente..."
   echo -e "${Azul}- IP: localhost"
   echo -e "${Azul}- Puerto: 25565"
 
@@ -555,10 +1656,9 @@ credits() {
   echo -e "${Amarillo}========================================"
   echo -e "${Azul}Script creado por: MA_Dev"
   echo -e "${Xtra}Programado en Visual Studio Code"
-  echo -e "${Azul_Dark}Usando Bash (.sh) y git bash"
-  echo -e "${Xtra}Versión del script: v1.4.1"
+  echo -e "${Azul_Dark}Usando Bash (.sh) y git bash (+java)" #*Java es opcional, pero es necesario para correr el servidor.
+  echo -e "${Xtra}Versión del script: v1.7."
   echo -e "${Verde}¡Gracias por usar el script!"
-  echo -e "${Rojo}MCST.sh no tendrá soporte a partir de Julio de 2025.
   echo -e "${Amarillo}========================================${NC}"
   echo -e "Presiona Enter para volver al menú..."
   read
@@ -568,7 +1668,6 @@ credits() {
 # Función para salir del script
 exit_script() {
   echo -e "${Verde}Finalizando Script, Gracias por usar MCST ¡Hasta otra!${NC}"
-  echo -e "${Rojo}MCST.sh no tendrá soporte a partir de Julio de 2025.
   exit 0
 }
 
@@ -576,7 +1675,8 @@ exit_script() {
 show_art "$ART1"
 show_art "$ART2"
 menu
+
 # HECHO POR: MA_DEV, 2025.
-# MCST.sh y MCST-EN.sh dejarán de recibir actualizaciones y soporte a partir del 30 de Junio de 2025. Para más información, Porfavor mire nuestro servidor de discord.
-# MCST Is no longer supported, in 30 June of 2025, The .sh version will not receive updates anymore, MCST is being updated in Python. The Source code is going to be updated as soon as posible.
-# ÚLTIMA VERSIÓN: 1.4.1
+  #* Espero no tener que convertirlo a python, va a ser un dolor de cabeza.
+
+#TODO: Organizar el código, hacer que sea más fácil de leer y entender.
